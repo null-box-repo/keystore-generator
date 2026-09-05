@@ -1,0 +1,61 @@
+/* .. output area and result cards */
+.ks-output {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ks-result {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  font-size: 13px;
+  animation: ks-in 250ms var(--ease) both;
+}
+
+.ks-result svg {
+  width: 24px;
+  height: 24px;
+}
+
+.ks-result code {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--surface-strong);
+  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ks-result pre {
+  margin: 0;
+  padding: 10px;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.ks-success {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.ks-success svg { color: var(--accent); }
+
+.ks-error {
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.ks-error svg { color: #ef4444; }
+
+@keyframes ks-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }

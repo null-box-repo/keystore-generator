@@ -1,0 +1,10 @@
+id=keystore-generator
+name=KeyStore Generator
+icon=icon.jpg
+description=Generate Java KeyStore (.jks) files with custom settings.
+author=YasserNull
+version=v1.0.0
+versionCode=1
+repository=https://github.com/null-box-repo/keystore-generator
+install=setup.sh
+permission=default
